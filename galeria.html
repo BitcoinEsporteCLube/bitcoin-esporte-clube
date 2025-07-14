@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Esporte Clube - Galeria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Bitcoin Esporte Clube" class="logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link inicio">Início</a></li>
+                        <li><a href="historia.html" class="nav-link historia">História</a></li>
+                        <li><a href="elenco.html" class="nav-link elenco">Elenco</a></li>
+                        <li><a href="jogos.html" class="nav-link jogos">Calendário de Jogos</a></li>
+                        <li><a href="noticias.html" class="nav-link noticias">Notícias</a></li>
+                        <li><a href="galeria.html" class="nav-link galeria">Galeria</a></li>
+                        <li><a href="tokens.html" class="nav-link tokens">Tokens & NFTs</a></li>
+                    </ul>
+                </nav>
+                <div class="area-buttons">
+                    <a href="login-atleta.html" class="btn-area atleta">Área do Atleta</a>
+                    <a href="login-socio.html" class="btn-area socio">Área do Sócio</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner da Galeria -->
+    <section class="page-banner" style="background: linear-gradient(rgba(0, 33, 71, 0.8), rgba(0, 33, 71, 0.8)), url('images/gallery-bg.jpg') no-repeat center center; background-size: cover;">
+        <div class="container">
+            <h1>Galeria</h1>
+            <p>Imagens e vídeos dos momentos mais marcantes do Bitcoin Esporte Clube</p>
+        </div>
+    </section>
+
+    <!-- Filtros da Galeria -->
+    <section class="section">
+        <div class="container">
+            <div class="gallery-filters">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="btn-group" role="group" aria-label="Filtros de mídia">
+                            <button type="button" class="btn btn-primary active" data-filter="all">Todos</button>
+                            <button type="button" class="btn btn-primary" data-filter="photos">Fotos</button>
+                            <button type="button" class="btn btn-primary" data-filter="videos">Vídeos</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="btn-group" role="group" aria-label="Filtros de categoria">
+                            <button type="button" class="btn btn-outline-primary active" data-category="all">Todas</button>
+                            <button type="button" class="btn btn-outline-primary" data-category="matches">Partidas</button>
+                            <button type="button" class="btn btn-outline-primary" data-category="training">Treinos</button>
+                            <button type="button" class="btn btn-outline-primary" data-category="fans">Torcida</button>
+                            <button type="button" class="btn btn-outline-primary" data-category="events">Eventos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Fotos -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Fotos</h2>
+            <div class="row gallery-container">
+                <div class="col-md-4 col-6 mb-4 gallery-item" data-category="matches">
+                    <a href="images/gallery1.jpg" data-lightbox="gallery" data-title="Comemoração de gol contra o Ethereum FC">
+                        <div class="gallery-card">
+                            <img src="images/gallery1.jpg" alt="Comemoração de gol" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h5 class="gallery-title">Comemoração de Gol</h5>
+                                <div class="gallery-date">15/05/2025</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 mb-4 gallery-item" data-category="training">
+                    <a href="images/gallery2.jpg" data-lightbox="gallery" data-title="Treino tático da equipe">
+                        <div class="gallery-card">
+                            <img src="images/gallery2.jpg" alt="Treino da Equipe" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h5 class="gallery-title">Treino da Equipe</h5>
+                                <div class="gallery-date">10/05/2025</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 mb-4 gallery-item" data-category="fans">
+                    <a href="images/gallery3.jpg" data-lightbox="gallery" data-title="Torcida no Estádio Bitcoin">
+                        <div class="gallery-card">
+                            <img src="images/gallery3.jpg" alt="Torcida no Estádio" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h5 class="gallery-title">Torcida no Estádio</h5>
+                                <div class="gallery-date">05/05/2025</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 mb-4 gallery-item" data-category="matches">
+                    <a href="images/gallery4.jpg" data-lightbox="gallery" data-title="Jogada decisiva contra o Crypto United">
+                        <div class="gallery-card">
+                            <img src="images/gallery4.jpg" alt="Jogada Decisiva" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h5 class="gallery-title">Jogada Decisiva</h5>
+                                <div class="gallery-date">28/04/2025</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 mb-4 gallery-item" data-category="events">
+                    <a href="images/gallery5.jpg" data-lightbox="gallery" data-title="Lançamento do novo uniforme">
+                        <div class="gallery-card">
+                            <img src="images/gallery5.jpg" alt="Lançamento do Uniforme" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h5 class="gallery-title">Lançamento do Uniforme</h5>
+                                <div class="gallery-date">20/04/2025</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 mb-4 gallery-item" data-category="training">
+                    <a href="images/gallery6.jpg" data-lightbox="gallery" data-title="Preparação física dos atletas">
+                        <div class="gallery-card">
+                            <img src="images/gallery6.jpg" alt="Preparação Física" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h5 class="gallery-title">Preparação Física</h5>
+                                <div class="gallery-date">15/04/2025</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 mb-4 gallery-item" data-category="events">
+                    <a href="images/gallery7.jpg" data-lightbox="gallery" data-title="Evento de lançamento dos tokens BEC">
+                        <div class="gallery-card">
+                            <img src="images/gallery7.jpg" alt="Lançamento dos Tokens" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h5 class="gallery-title">Lançamento dos Tokens</h5>
+                                <div class="gallery-date">10/04/2025</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 mb-4 gallery-item" data-category="fans">
+                    <a href="images/gallery8.jpg" data-lightbox="gallery" data-title="Encontro de torcedores">
+                        <div class="gallery-card">
+                            <img src="images/gallery8.jpg" alt="Encontro de Torcedores" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h5 class="gallery-title">Encontro de Torcedores</h5>
+                                <div class="gallery-date">05/04/2025</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 mb-4 gallery-item" data-category="matches">
+                    <a href="images/gallery9.jpg" data-lightbox="gallery" data-title="Defesa espetacular do goleiro">
+                        <div class="gallery-card">
+                            <img src="images/gallery9.jpg" alt="Defesa do Goleiro" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h5 class="gallery-title">Defesa do Goleiro</h5>
+                                <div class="gallery-date">01/04/2025</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Vídeos -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Vídeos</h2>
+            <div class="row gallery-container">
+                <div class="col-md-6 mb-4 gallery-item video-item" data-category="matches">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="images/video1-thumb.jpg" alt="Melhores momentos" class="video-img">
+                            <div class="video-play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h5 class="video-title">Melhores momentos: Bitcoin EC 2 x 0 Crypto United</h5>
+                            <div class="video-date">10 de Maio, 2025</div>
+                            <p class="video-description">Confira os melhores momentos da vitória do Bitcoin EC sobre o Crypto United pelo Campeonato Regional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 gallery-item video-item" data-category="training">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="images/video2-thumb.jpg" alt="Bastidores do treino" class="video-img">
+                            <div class="video-play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h5 class="video-title">Bastidores do treino: Preparação para o clássico</h5>
+                            <div class="video-date">08 de Maio, 2025</div>
+                            <p class="video-description">Acompanhe os bastidores da preparação da equipe para o clássico contra o Ethereum FC.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 gallery-item video-item" data-category="events">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="images/video3-thumb.jpg" alt="Lançamento dos tokens" class="video-img">
+                            <div class="video-play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h5 class="video-title">Evento de lançamento dos tokens BEC</h5>
+                            <div class="video-date">10 de Abril, 2025</div>
+                            <p class="video-description">Veja como foi o evento de lançamento dos tokens BEC, com a presença de jogadores, dirigentes e torcedores.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 gallery-item video-item" data-category="fans">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="images/video4-thumb.jpg" alt="Torcida no estádio" class="video-img">
+                            <div class="video-play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h5 class="video-title">A festa da torcida no Estádio Bitcoin</h5>
+                            <div class="video-date">05 de Maio, 2025</div>
+                            <p class="video-description">Confira a incrível festa da torcida do Bitcoin EC durante a partida contra o Crypto United.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Envie sua Foto -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="submit-photo-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3>Envie sua foto ou vídeo</h3>
+                        <p>Compartilhe seus momentos com o Bitcoin Esporte Clube. As melhores imagens e vídeos serão publicados em nossa galeria oficial.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="submit-photo-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="file" class="form-label">Arquivo (foto ou vídeo)</label>
+                                <input type="file" class="form-control" id="file" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="description" class="form-label">Descrição</label>
+                                <textarea class="form-control" id="description" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre o Clube</h5>
+                    <p>O Bitcoin Esporte Clube é o primeiro clube de futebol do Brasil com integração de criptomoedas e NFTs, unindo a paixão pelo esporte com a inovação tecnológica.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="historia.html">História</a></li>
+                        <li><a href="elenco.html">Elenco</a></li>
+                        <li><a href="jogos.html">Calendário de Jogos</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="tokens.html">Tokens & NFTs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Estádio Bitcoin, Av. Principal, 123</li>
+                        <li><i class="fas fa-phone me-2"></i> (11) 1234-5678</li>
+                        <li><i class="fas fa-envelope me-2"></i> contato@bitcoinec.com.br</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="mb-0">&copy; 2025 Bitcoin Esporte Clube. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+:root {
+    --primary-color: #FF6600;
+    --secondary-color: #003366;
+    --dark-blue: #002147;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-color);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* Cabeçalho */
+.main-header {
+    background-color: var(--dark-blue);
+    padding: 0;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.logo-container {
+    padding: 5px 0;
+}
+
+.logo {
+    height: 60px;
+    padding: 5px;
+}
+
+/* Menu de navegação */
+.main-nav {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.inicio {
+    color: #FF6600;
+}
+
+.nav-link.historia {
+    color: #fff;
+}
+
+.nav-link.elenco {
+    color: #fff;
+}
+
+.nav-link.jogos {
+    color: #fff;
+}
+
+.nav-link.noticias {
+    color: #fff;
+}
+
+.nav-link.galeria {
+    color: #fff;
+}
+
+.nav-link.tokens {
+    color: #fff;
+}
+
+/* Botões de área */
+.area-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-area {
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-area.atleta {
+    background-color: var(--dark-blue);
+    border: 1px solid #fff;
+}
+
+.btn-area.socio {
+    background-color: var(--primary-color);
+}
+
+.btn-area:hover {
+    opacity: 0.9;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: linear-gradient(to right, var(--dark-blue), var(--primary-color));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Botões de ação */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.action-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.action-button:hover {
+    background-color: #e55c00;
+    color: white;
+}
+
+.action-button.secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+}
+
+.action-button.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Seções da Página Inicial */
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+/* Próximo Jogo */
+.match-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.team-logo-small {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.match-date {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.match-time {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.match-venue {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.card-text {
+    color: var(--dark-color);
+}
+
+/* Notícias */
+.news-card .news-date {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Tokens */
+.token-card {
+    padding: 30px;
+    text-align: center;
+}
+
+.token-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.token-price-container {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Elenco */
+.player-card {
+    text-align: center;
+}
+
+.player-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.player-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.player-position {
+    color: var(--primary-color);
+}
+
+/* Galeria */
+.gallery-item {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+/* Login */
+.login-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.form-control {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-blue);
+    color: white;
+    padding-top: 50px;
+}
+
+.footer h5 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .main-nav {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .area-buttons {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 50vh;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .logo {
+        height: 50px;
+    }
+}

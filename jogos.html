@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Esporte Clube - Calendário de Jogos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Bitcoin Esporte Clube" class="logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link inicio">Início</a></li>
+                        <li><a href="historia.html" class="nav-link historia">História</a></li>
+                        <li><a href="elenco.html" class="nav-link elenco">Elenco</a></li>
+                        <li><a href="jogos.html" class="nav-link jogos">Calendário de Jogos</a></li>
+                        <li><a href="noticias.html" class="nav-link noticias">Notícias</a></li>
+                        <li><a href="galeria.html" class="nav-link galeria">Galeria</a></li>
+                        <li><a href="tokens.html" class="nav-link tokens">Tokens & NFTs</a></li>
+                    </ul>
+                </nav>
+                <div class="area-buttons">
+                    <a href="login-atleta.html" class="btn-area atleta">Área do Atleta</a>
+                    <a href="login-socio.html" class="btn-area socio">Área do Sócio</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner do Calendário -->
+    <section class="page-banner" style="background: linear-gradient(rgba(0, 33, 71, 0.8), rgba(0, 33, 71, 0.8)), url('images/stadium-bg.jpg') no-repeat center center; background-size: cover;">
+        <div class="container">
+            <h1>Calendário de Jogos</h1>
+            <p>Acompanhe todos os jogos do Bitcoin Esporte Clube na temporada</p>
+        </div>
+    </section>
+
+    <!-- Próximo Jogo -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Próximo Jogo</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="match-card featured-match">
+                        <div class="match-date">28 de Maio, 2025 - 16:00</div>
+                        <div class="match-venue">Estádio Bitcoin</div>
+                        <div class="match-league">Campeonato Regional - 10ª Rodada</div>
+                        
+                        <div class="row align-items-center mt-4">
+                            <div class="col-5 text-center">
+                                <img src="images/logo.png" alt="Bitcoin EC" class="team-logo-medium">
+                                <h4 class="team-name">Bitcoin EC</h4>
+                            </div>
+                            <div class="col-2 text-center">
+                                <div class="match-vs">VS</div>
+                            </div>
+                            <div class="col-5 text-center">
+                                <img src="images/opponent-logo.png" alt="Adversário FC" class="team-logo-medium">
+                                <h4 class="team-name">Adversário FC</h4>
+                            </div>
+                        </div>
+                        
+                        <div id="match-countdown" data-match-date="2025-05-28T16:00:00" class="match-countdown mt-4">
+                            <!-- Countdown será preenchido via JavaScript -->
+                        </div>
+                        
+                        <div class="match-actions mt-4">
+                            <a href="#" class="btn btn-primary">Comprar Ingressos</a>
+                            <a href="#" class="btn btn-outline-primary ms-2">Detalhes do Jogo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendário Completo -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Calendário Completo</h2>
+            
+            <div class="calendar-filters mb-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <select class="form-select" id="competition-filter">
+                            <option value="all">Todas as Competições</option>
+                            <option value="regional">Campeonato Regional</option>
+                            <option value="cup">Copa Estadual</option>
+                            <option value="friendly">Amistosos</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select" id="month-filter">
+                            <option value="all">Todos os Meses</option>
+                            <option value="05">Maio 2025</option>
+                            <option value="06">Junho 2025</option>
+                            <option value="07">Julho 2025</option>
+                            <option value="08">Agosto 2025</option>
+                            <option value="09">Setembro 2025</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="home-games-only">
+                            <label class="form-check-label" for="home-games-only">Apenas Jogos em Casa</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="match-list">
+                <!-- Maio -->
+                <h3 class="month-title">Maio 2025</h3>
+                
+                <div class="match-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="match-date-time">
+                                <div class="match-date">05 de Maio, 2025</div>
+                                <div class="match-time">19:30</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="match-teams">
+                                <div class="home-team">Bitcoin EC</div>
+                                <div class="match-result">2 - 1</div>
+                                <div class="away-team">FC Digital</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="match-info">
+                                <div class="match-competition">Campeonato Regional</div>
+                                <div class="match-venue">Estádio Bitcoin</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="match-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="match-date-time">
+                                <div class="match-date">12 de Maio, 2025</div>
+                                <div class="match-time">16:00</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="match-teams">
+                                <div class="home-team">Crypto United</div>
+                                <div class="match-result">0 - 3</div>
+                                <div class="away-team">Bitcoin EC</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="match-info">
+                                <div class="match-competition">Campeonato Regional</div>
+                                <div class="match-venue">Estádio Blockchain</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="match-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="match-date-time">
+                                <div class="match-date">19 de Maio, 2025</div>
+                                <div class="match-time">20:00</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="match-teams">
+                                <div class="home-team">Bitcoin EC</div>
+                                <div class="match-result">1 - 1</div>
+                                <div class="away-team">Atlético Satoshi</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="match-info">
+                                <div class="match-competition">Copa Estadual</div>
+                                <div class="match-venue">Estádio Bitcoin</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="match-item upcoming">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="match-date-time">
+                                <div class="match-date">28 de Maio, 2025</div>
+                                <div class="match-time">16:00</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="match-teams">
+                                <div class="home-team">Bitcoin EC</div>
+                                <div class="match-result">VS</div>
+                                <div class="away-team">Adversário FC</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="match-info">
+                                <div class="match-competition">Campeonato Regional</div>
+                                <div class="match-venue">Estádio Bitcoin</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Junho -->
+                <h3 class="month-title">Junho 2025</h3>
+                
+                <div class="match-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="match-date-time">
+                                <div class="match-date">05 de Junho, 2025</div>
+                                <div class="match-time">19:30</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="match-teams">
+                                <div class="home-team">Ethereum FC</div>
+                                <div class="match-result">VS</div>
+                                <div class="away-team">Bitcoin EC</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="match-info">
+                                <div class="match-competition">Campeonato Regional</div>
+                                <div class="match-venue">Estádio Smart Contract</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="match-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="match-date-time">
+                                <div class="match-date">12 de Junho, 2025</div>
+                                <div class="match-time">16:00</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="match-teams">
+                                <div class="home-team">Bitcoin EC</div>
+                                <div class="match-result">VS</div>
+                                <div class="away-team">Blockchain United</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="match-info">
+                                <div class="match-competition">Copa Estadual</div>
+                                <div class="match-venue">Estádio Bitcoin</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classificação -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Classificação</h2>
+            
+            <div class="table-responsive">
+                <table class="table table-standings">
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Clube</th>
+                            <th>P</th>
+                            <th>J</th>
+                            <th>V</th>
+                            <th>E</th>
+                            <th>D</th>
+                            <th>GP</th>
+                            <th>GC</th>
+                            <th>SG</th>
+                            <th>Últimos 5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="highlight">
+                            <td>1</td>
+                            <td>Bitcoin EC</td>
+                            <td>22</td>
+                            <td>9</td>
+                            <td>7</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>18</td>
+                            <td>5</td>
+                            <td>+13</td>
+                            <td>
+                                <span class="result-icon win">V</span>
+                                <span class="result-icon win">V</span>
+                                <span class="result-icon draw">E</span>
+                                <span class="result-icon win">V</span>
+                                <span class="result-icon win">V</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ethereum FC</td>
+                            <td>20</td>
+                            <td>9</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>15</td>
+                            <td>7</td>
+                            <td>+8</td>
+                            <td>
+                                <span class="result-icon win">V</span>
+                                <span class="result-icon win">V</span>
+                                <span class="result-icon win">V</span>
+                                <span class="result-icon draw">E</span>
+                                <span class="result-icon draw">E</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Atlético Satoshi</td>
+                            <td>17</td>
+                            <td>9</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>14</td>
+                            <td>9</td>
+                            <td>+5</td>
+                            <td>
+                                <span class="result-icon win">V</span>
+                                <span class="result-icon draw">E</span>
+                                <span class="result-icon win">V</span>
+                                <span class="result-icon draw">E</span>
+                                <span class="result-icon loss">D</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Blockchain United</td>
+                            <td>15</td>
+                            <td>9</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td>+2</td>
+                            <td>
+                                <span class="result-icon draw">E</span>
+                                <span class="result-icon win">V</span>
+                                <span class="result-icon win">V</span>
+                                <span class="result-icon draw">E</span>
+                                <span class="result-icon draw">E</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>FC Digital</td>
+                            <td>13</td>
+                            <td>9</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>-1</td>
+                            <td>
+                                <span class="result-icon win">V</span>
+                                <span class="result-icon loss">D</span>
+                                <span class="result-icon win">V</span>
+                                <span class="result-icon loss">D</span>
+                                <span class="result-icon win">V</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Crypto United</td>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>8</td>
+                            <td>15</td>
+                            <td>-7</td>
+                            <td>
+                                <span class="result-icon loss">D</span>
+                                <span class="result-icon loss">D</span>
+                                <span class="result-icon win">V</span>
+                                <span class="result-icon loss">D</span>
+                                <span class="result-icon loss">D</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Adversário FC</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>13</td>
+                            <td>-6</td>
+                            <td>
+                                <span class="result-icon loss">D</span>
+                                <span class="result-icon draw">E</span>
+                                <span class="result-icon loss">D</span>
+                                <span class="result-icon win">V</span>
+                                <span class="result-icon draw">E</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Miners FC</td>
+                            <td>3</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>6</td>
+                            <td>5</td>
+                            <td>19</td>
+                            <td>-14</td>
+                            <td>
+                                <span class="result-icon loss">D</span>
+                                <span class="result-icon loss">D</span>
+                                <span class="result-icon draw">E</span>
+                                <span class="result-icon loss">D</span>
+                                <span class="result-icon draw">E</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre o Clube</h5>
+                    <p>O Bitcoin Esporte Clube é o primeiro clube de futebol do Brasil com integração de criptomoedas e NFTs, unindo a paixão pelo esporte com a inovação tecnológica.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="historia.html">História</a></li>
+                        <li><a href="elenco.html">Elenco</a></li>
+                        <li><a href="jogos.html">Calendário de Jogos</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="tokens.html">Tokens & NFTs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Estádio Bitcoin, Av. Principal, 123</li>
+                        <li><i class="fas fa-phone me-2"></i> (11) 1234-5678</li>
+                        <li><i class="fas fa-envelope me-2"></i> contato@bitcoinec.com.br</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="mb-0">&copy; 2025 Bitcoin Esporte Clube. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

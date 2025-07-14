@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Esporte Clube - Área do Sócio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Bitcoin Esporte Clube" class="logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link inicio">Início</a></li>
+                        <li><a href="historia.html" class="nav-link historia">História</a></li>
+                        <li><a href="elenco.html" class="nav-link elenco">Elenco</a></li>
+                        <li><a href="jogos.html" class="nav-link jogos">Calendário de Jogos</a></li>
+                        <li><a href="noticias.html" class="nav-link noticias">Notícias</a></li>
+                        <li><a href="galeria.html" class="nav-link galeria">Galeria</a></li>
+                        <li><a href="tokens.html" class="nav-link tokens">Tokens & NFTs</a></li>
+                    </ul>
+                </nav>
+                <div class="area-buttons">
+                    <a href="login-atleta.html" class="btn-area atleta">Área do Atleta</a>
+                    <a href="login-socio.html" class="btn-area socio active">Área do Sócio</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Área de Login do Sócio -->
+    <section class="login-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="login-card socio-card">
+                        <div class="login-header">
+                            <img src="images/logo.png" alt="Bitcoin Esporte Clube" class="login-logo">
+                            <h2>Área do Sócio Torcedor</h2>
+                            <p>Acesse sua área exclusiva para sócios do Bitcoin Esporte Clube</p>
+                        </div>
+                        <div class="login-body">
+                            <form class="login-form">
+                                <div class="mb-3">
+                                    <label for="member-email" class="form-label">E-mail</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                        <input type="email" class="form-control" id="member-email" placeholder="Digite seu e-mail" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="member-password" class="form-label">Senha</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                        <input type="password" class="form-control" id="member-password" placeholder="Digite sua senha" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="remember-me-member">
+                                    <label class="form-check-label" for="remember-me-member">Lembrar-me</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                                <div class="forgot-password mt-3 text-center">
+                                    <a href="#">Esqueceu sua senha?</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="login-footer">
+                            <p>Ainda não é sócio? <a href="#planos-socio">Associe-se agora</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos de Sócio Torcedor -->
+    <section class="section bg-light" id="planos-socio">
+        <div class="container">
+            <h2 class="section-title text-center">Planos de Sócio Torcedor</h2>
+            <p class="section-description text-center">Escolha o plano ideal para você e faça parte da família Bitcoin Esporte Clube</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3>Plano Bronze</h3>
+                            <div class="plan-price">
+                                <span class="currency">R$</span>
+                                <span class="amount">49,90</span>
+                                <span class="period">/mês</span>
+                            </div>
+                        </div>
+                        <div class="plan-body">
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> Desconto de 10% em ingressos</li>
+                                <li><i class="fas fa-check"></i> Desconto de 5% na loja oficial</li>
+                                <li><i class="fas fa-check"></i> 50 BEC Tokens por mês</li>
+                                <li><i class="fas fa-check"></i> Acesso a conteúdo exclusivo</li>
+                                <li><i class="fas fa-times"></i> Prioridade na compra de ingressos</li>
+                                <li><i class="fas fa-times"></i> Acesso a eventos exclusivos</li>
+                                <li><i class="fas fa-times"></i> NFTs exclusivos</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary btn-block mt-4">Associar-se</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="plan-card featured">
+                        <div class="plan-badge">Mais Popular</div>
+                        <div class="plan-header">
+                            <h3>Plano Prata</h3>
+                            <div class="plan-price">
+                                <span class="currency">R$</span>
+                                <span class="amount">89,90</span>
+                                <span class="period">/mês</span>
+                            </div>
+                        </div>
+                        <div class="plan-body">
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> Desconto de 20% em ingressos</li>
+                                <li><i class="fas fa-check"></i> Desconto de 10% na loja oficial</li>
+                                <li><i class="fas fa-check"></i> 100 BEC Tokens por mês</li>
+                                <li><i class="fas fa-check"></i> Acesso a conteúdo exclusivo</li>
+                                <li><i class="fas fa-check"></i> Prioridade na compra de ingressos</li>
+                                <li><i class="fas fa-check"></i> Acesso a eventos exclusivos</li>
+                                <li><i class="fas fa-times"></i> NFTs exclusivos</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary btn-block mt-4">Associar-se</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3>Plano Ouro</h3>
+                            <div class="plan-price">
+                                <span class="currency">R$</span>
+                                <span class="amount">149,90</span>
+                                <span class="period">/mês</span>
+                            </div>
+                        </div>
+                        <div class="plan-body">
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> Desconto de 30% em ingressos</li>
+                                <li><i class="fas fa-check"></i> Desconto de 15% na loja oficial</li>
+                                <li><i class="fas fa-check"></i> 200 BEC Tokens por mês</li>
+                                <li><i class="fas fa-check"></i> Acesso a conteúdo exclusivo</li>
+                                <li><i class="fas fa-check"></i> Prioridade na compra de ingressos</li>
+                                <li><i class="fas fa-check"></i> Acesso a eventos exclusivos</li>
+                                <li><i class="fas fa-check"></i> NFTs exclusivos trimestrais</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary btn-block mt-4">Associar-se</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios do Sócio -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Benefícios do Sócio Torcedor</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <h4>Ingressos com Desconto</h4>
+                        <p>Descontos exclusivos na compra de ingressos para jogos do Bitcoin EC, com prioridade na escolha de assentos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h4>Descontos na Loja</h4>
+                        <p>Descontos especiais em todos os produtos da loja oficial do clube, incluindo uniformes e acessórios.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h4>Tokens Mensais</h4>
+                        <p>Receba BEC Tokens mensalmente para usar no ecossistema do clube, incluindo votações e benefícios exclusivos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h4>Conteúdo Exclusivo</h4>
+                        <p>Acesso a conteúdos exclusivos, como bastidores, entrevistas e análises táticas dos jogos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Eventos Especiais</h4>
+                        <p>Participação em eventos exclusivos com jogadores, comissão técnica e diretoria do clube.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h4>NFTs Exclusivos</h4>
+                        <p>Acesso a NFTs exclusivos para sócios, com itens colecionáveis digitais do Bitcoin EC.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">O que dizem nossos sócios</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Ser sócio do Bitcoin EC é uma experiência incrível! Os tokens mensais e os benefícios exclusivos fazem toda a diferença. Recomendo a todos os torcedores!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial1.jpg" alt="Carlos Silva" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <h5>Carlos Silva</h5>
+                                <p>Sócio Prata há 1 ano</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Os NFTs exclusivos do plano Ouro são incríveis! Já tenho uma coleção valiosa e adoro participar das votações do clube com meus tokens BEC."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial2.jpg" alt="Ana Oliveira" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <h5>Ana Oliveira</h5>
+                                <p>Sócia Ouro há 2 anos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"O plano Bronze é perfeito para quem está começando. Os descontos em ingressos já compensam a mensalidade e os tokens são um bônus incrível!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial3.jpg" alt="Pedro Santos" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <h5>Pedro Santos</h5>
+                                <p>Sócio Bronze há 6 meses</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre o Clube</h5>
+                    <p>O Bitcoin Esporte Clube é o primeiro clube de futebol do Brasil com integração de criptomoedas e NFTs, unindo a paixão pelo esporte com a inovação tecnológica.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="historia.html">História</a></li>
+                        <li><a href="elenco.html">Elenco</a></li>
+                        <li><a href="jogos.html">Calendário de Jogos</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="tokens.html">Tokens & NFTs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Estádio Bitcoin, Av. Principal, 123</li>
+                        <li><i class="fas fa-phone me-2"></i> (11) 1234-5678</li>
+                        <li><i class="fas fa-envelope me-2"></i> contato@bitcoinec.com.br</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="mb-0">&copy; 2025 Bitcoin Esporte Clube. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
